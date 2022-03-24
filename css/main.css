@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.svg{
+    background: url(../image/house.jpg)  center no-repeat;
+
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.svg .wave{
+  position: absolute;
+  width: 100%;
+  height: 143px;
+  bottom: 0;
+  left: 0;
+  background: url(../image/wave.png)  ;
+  animation: animate 10s linear infinite;
+
+
+}
+
+.svg .wave::before{
+    content: '';
+    width: 100%;
+    height: 143px;
+  background: url(../image/wave.png)  ;
+ position: absolute;
+ top: 0;
+ left: 0;
+ opacity: 0.4;
+ animation: reversed 10s linear infinite;
+
+}
+.svg .wave::after{
+    content: '';
+    width: 100%;
+    height: 143px;
+  background: url(../image/wave.png)  ;
+ position: absolute;
+ top: 0;
+ left: 0;
+ opacity: 0.4;
+ animation-delay: -5s;
+ animation: animate 20s linear infinite;
+
+}
+
+
+@keyframes animate{
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 1360px;
+    }
+}
+@keyframes reversed{
+    0%{
+        background-position: 1360px;
+    }
+    100%{
+        background-position: 0;
+    }
+}
+
+
+.container-fluid input,
+.container-fluid select
+
+{border: 1px solid navy;
+    outline: none;
+}
+nav{
+    background-color: transparent;
+    
+
+}
+
+.navbar-brand{
+    color: yellow !important;
+  font-weight: bolder;
+  font-size: 2.2rem;
+}
+
+
+ nav .nav-link{
+    font-weight: bolder;
+    color: yellow !important;
+    font-size: 1.8rem;
+    
+}
+
+nav .nav-link:hover{
+    color: white !important;
+}
+
+
+
+.dropdown-menu{
+    background-color: navy;
+    border: none;
+   
+    
+
+}
+
+.dropdown-item{
+    color: white;
+    background-color: navy;
+}
+
+.dropdown-item:hover{
+   color: yellow;
+   background-color: transparent;
+}
+
+.button{
+   width:100%; margin: 0 auto; 
+   background: navy; 
+   color:white;
+    border:none;
+    border-radius: 3px;
+
+
+}
+.button-danger{
+    width:100%; margin: 0 auto; background: red; color:white; border:none;
+    border-radius: 3px;
+
+}
+.button-success{
+    width:100%; margin: 0 auto; background: navy; color:white; border:none;
+    border-radius: 3px;
+
+}
+.success{
+    padding: .5rem;
+  border:1px solid transparent;
+  border-radius: 5px;
+  margin-bottom: .5rem;
+    color: #2020a0;
+    background-color: #e0e0ff;
+    margin-top: -1rem;
+    
+}
+.error
+{color: #a02020;
+    padding:.5rem;
+    border:1px solid transparent;
+    border-radius: 5px;
+    margin-bottom: .5rem;
+    
+    margin-top: -1rem;
+      
+  background-color: #ffe0e0e0;}
+
+  
+
+  .wrapper{
+      padding: 20px 50px;
+  }
+
+  .wrapper .title{
+      font-size: 50px;
+      font-weight: 600;
+      margin-left: 10px;
+  }
+
+  .wrapper p{
+      text-align: justify;
+      padding-bottom: 20px;
+      font-size: 20px;
+
+  }
+
+  .counter-up{
+      background: url(../image/house.jpg) no-repeat;
+      min-height: 50vh;
+      display: flex;
+      align-items: center;
+      padding: 0 50px;
+      background-size: cover;
+      background-attachment: fixed;
+      position: relative;
+  }
+
+  .counter-up::before{
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.8);
+  }
+
+  .counter-up .content{
+      position: relative;
+      z-index: 2;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+  }
+
+  .content .box{
+      width: calc(25% - 30px);
+      border: 1px dashed rgba(255, 255, 255, 0.6);
+      border-radius: 5px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      color: white;
+      flex-direction: column;
+      border-radius: 5px;
+  }
+
+  .content .box .icon{
+      font-size: 48px;
+  }
+  .content .box .counter{
+      font-size: 50px;
+      font-weight: 500;
+      font-family: sans-serif;
+  }
+
+  .content .box .text{
+      font-weight: 400;
+
+  }
+
+.round-btn a{
+    border: 2px solid yellow;
+    border-radius: 30px;
+    padding: .3rem 1rem !important;
+    font-weight: 400;
+}
+.round-btn a:hover{
+    border: 2px solid white;
+    
+    
+}
+
+.absolute{
+    margin-top: 20vh;
+    margin-left: 5%;
+}
+
+.absolute h1{
+    color: white;
+    margin-bottom: 2rem;
+    font-size: 5rem;
+    text-shadow: 1px 1px 1px navy;
+
+}
+.absolute p{
+    color: yellow;
+    font-size: 3rem;
+    margin-bottom: -.5rem;
+    text-shadow: 2px 2px 2px navy;
+}
+
+ 
+
+/* .box-group{
+    margin-top: 0rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent ;
+    padding: 5rem 0;
+     background-color: navy;
+   
+
+
+}
+.box{
+    width: 30%;
+    color: navy;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.box i{
+   font-size: 700%;
+   color: yellow;
+  
+   
+}
+.box i:hover{
+  transform: rotate(-5deg);
+  animation-duration: 2s;
+  
+   
+}
+
+.box h3{
+  color: white;
+  z-index: 3;
+  text-align: center;
+  font-size: 1rem;
+  font-family:Georgia, 'Times New Roman', Times, serif
+}
+.box h2{
+  color: white;
+  z-index: 3;
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 1.6rem;
+color: white;
+}*/
+
+
+
+  @media (max-width: 1036px){
+     .content .box{
+         width: calc(50% - 30px);
+     }
+     .round-btn a{
+        border: none; 
+
+    }
+   
+   
+
+}
+@media (max-width: 768px){
+    .absolute{
+        margin-top: 10%;
+       padding: 3%;
+
+       
+    }
+    .absolute p{
+       font-size: 2rem;
+       font-weight: 600;
+       text-shadow: 1px 1px 1px navy;
+    }
+    .absolute h1{
+       font-size: 3rem;
+       text-shadow: 2px 2px 2px navy;
+       
+    }
+    .box-group{
+        flex-direction: column;
+        
+     
+     
+     }
+     
+     .box{
+         width: 90%;
+         margin-bottom: 3rem;
+     }
+     nav .nav-link{
+        font-weight: bolder;
+        color: yellow !important;
+        font-size: 1.8rem;
+        margin-left: 25rem;
+        margin-bottom: 2rem;
+        
+    }
+    .wrapper p{
+        text-align: justify;
+        padding-bottom: 20px;
+        font-size: 10px;
+  
+    }
+    .wrapper .title{
+        font-size: 40px;
+        font-weight: 600;
+        margin-left: 10px;
+    }
+}
+
+
+
+  @media (max-width: 580px){
+     .content .box{
+         width: 100%;
+     }
+     
+  }
+
+
+  
